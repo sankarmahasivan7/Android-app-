@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Subject Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_subject_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/subject_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_dialog_subject_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Subject Code -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_subject_code"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/subject_code">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_dialog_subject_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Faculty Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_faculty_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/faculty_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_dialog_faculty_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Target Study Hours -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_target_hours"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/target_hours">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_dialog_target_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+

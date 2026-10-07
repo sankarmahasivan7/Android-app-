@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Task Title -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_dialog_task_title"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/task_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_dialog_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Task Description -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_dialog_task_description"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/task_description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_dialog_task_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Subject Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_subject"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_dialog_task_subject"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/badge_subject_code"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Due Date -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_dialog_task_due_date"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/task_due_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_dialog_task_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Priority Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_priority"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_dialog_task_priority"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/badge_subject_code"
+            android:paddingHorizontal="12dp" />
+
+    </LinearLayout>
+</ScrollView>
+
